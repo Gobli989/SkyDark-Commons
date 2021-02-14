@@ -39,9 +39,4 @@ public class NumberUtils {
         return (double) tmp / factor;
     }
 
-    public static int parseInt(String s) {
-        if (isNumber(s)) return Integer.parseInt(s);
-        return 0;
-    }
-
 }

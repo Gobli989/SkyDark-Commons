@@ -6,16 +6,6 @@ import java.util.List;
 
 public class TextUtils {
 
-    public static boolean equals(String main, String... args) {
-        for (String s : args) if (main.equals(s)) return true;
-        return false;
-    }
-
-    public static boolean equalsIgnoreCase(String main, String... args) {
-        for (String s : args) if (main.equalsIgnoreCase(s)) return true;
-        return false;
-    }
-
     public static List<String> format(List<String> s, Placeholder... placeholders) {
         List<String> a = new ArrayList<>();
         for (String value : s)

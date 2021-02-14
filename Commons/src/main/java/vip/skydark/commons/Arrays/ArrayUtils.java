@@ -252,4 +252,14 @@ public class ArrayUtils {
         return c;
     }
 
+    public static boolean equals(String main, String... args) {
+        for (String s : args) if (main.equals(s)) return true;
+        return false;
+    }
+
+    public static boolean equalsIgnoreCase(String main, String... args) {
+        for (String s : args) if (main.equalsIgnoreCase(s)) return true;
+        return false;
+    }
+
 }
